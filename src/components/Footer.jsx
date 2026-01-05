@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/Frame 3.svg";
-import footerArrow from "../assets/footerArrow.svg";
-import footerRound from "../assets/footerRound.svg";
+//import footerArrow from "../assets/footerArrow.svg";
+//import footerRound from "../assets/footerRound.svg";
 import { useNavigate, useLocation } from "react-router-dom";
 
 import { NavLink } from "react-router-dom";
