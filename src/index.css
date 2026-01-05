@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+     .font-alexandria {
+    font-family: 'Alexandria', sans-serif;
+  }
+    @apply bg-black text-white font-sans antialiased overflow-x-hidden;
+  }
+}
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotateX(6deg) rotateY(-6deg);
+  }
+  100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+.image-float {
+  animation: floatSoft 2s ease-in-out infinite; /* 3s instead of 6s → moves faster */
+  transform-style: preserve-3d;
+}
+ 
+section[id] {
+  scroll-margin-top: 64px; /* height of your fixed header */
+}
+
+/* For mobile screens < 768px */
+@media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 72px; /* adjust to your mobile header height */
+  }
+}

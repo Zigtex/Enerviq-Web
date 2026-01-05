@@ -1,0 +1,68 @@
+/* Metallic paint effect for logo */
+
+.metallic-logo {
+  position: relative;
+  display: inline-block;
+}
+
+.metallic-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Metallic surface simulation */
+.metallic-logo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* Pattern Scale ≈ 2.6 */
+  background: linear-gradient(
+    140deg,
+    transparent 25%,
+    rgba(260, 255, 255, 0) 28%,
+    rgba(13, 13, 13, 0.475) 45%,
+    rgba(255, 255, 255, 0.127) 72%,
+    transparent 250%
+  );
+
+  background-size: 220% 260%;
+
+  /* Speed ≈ 0.17 */
+  animation: metallic-shine 4s linear infinite;
+
+  /* Refraction ≈ 0.015 */
+  /* mix-blend-mode: overlay; */
+
+  mix-blend-mode: screen;
+
+
+  opacity: 0.99;
+
+  /* Pattern Blur ≈ 0.005 */
+  /* filter: blur(0.55px); */
+
+  pointer-events: none;
+
+  /* Mask stays EXACTLY as you had it */
+  -webkit-mask-image: url("/src/assets/Object.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: url("/src/assets/Object.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+/* Liquid movement */
+@keyframes metallic-shine {
+  0% {
+    background-position: 280% 0%;
+  }
+  100% {
+    background-position: -260% 100%;
+  }
+}
