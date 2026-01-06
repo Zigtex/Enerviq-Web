@@ -79,6 +79,7 @@ const Contact = () => {
        {toast.show && (
   <div
     className="
+      
       fixed top-6 left-1/2 -translate-x-1/2
       flex items-center gap-3
       px-5 py-3 rounded-full
@@ -101,6 +102,7 @@ const Contact = () => {
 
       <div
         className="
+           
           relative z-10 w-full
           max-w-[420px]
           sm:max-w-[520px]
@@ -116,7 +118,7 @@ const Contact = () => {
           </span>
         </div>
 
-        <h1 className="font-serif text-[26px] sm:text-[34px] lg:text-[44px] xl:text-[52px] text-white leading-tight mb-4">
+                <h1 className="font-alexandria font-serif text-[26px] sm:text-[34px] lg:text-[44px] xl:text-[52px] text-white leading-tight mb-4">
           Chat To Our Friendly Team
         </h1>
 
