@@ -41,7 +41,7 @@ export default function FAQs() {
       {/* Soft background glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255, 255, 255, 0),transparent_60%)] pointer-events-none" />
 
-      <div className="relative max-w-[66rem] mx-auto px-4 sm:px-6 pt-0 sm:pt-12
+      <div className="relative max-w-[66rem] mx-auto px-4 sm:px-6 pt-8 sm:pt-12
 ">
         {/* Badge */}
          <div className="flex justify-center mb-4">

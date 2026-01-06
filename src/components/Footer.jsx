@@ -37,19 +37,18 @@ const handleScroll = (id) => {
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 lg:gap-20">
 
 
-        {/* Logo */}
+                {/* Logo */}
             <img
             src={logo}
             alt="Enerviq Logo"
-            className="h-9 sm:h-11 lg:h-14 mb-6"
+            className="h-12 sm:h-11 lg:h-14 mb-6 mx-auto sm:mx-0"
           />
-
-        {/* Quick Links */}
+            
           <div>
-             <h4 className="text-white font-medium text-base lg:text-sl xl:text-xl mb-4 lg:mb-6 tracking-wide">
-                Quick links
-            </h4>
-              <ul className="space-y-2 sm:space-y-3 text-[14px] sm:text-[15px] lg:text-[16px] text-gray-400">
+             <h4 className="text-white font-medium text-lg sm:text-base lg:text-sl xl:text-xl mb-4 lg:mb-6 tracking-wide text-center sm:text-left">            
+              Quick Links
+             </h4>
+          <ul className="space-y-2 sm:space-y-3 text-[14px] sm:text-[15px] lg:text-[16px] text-gray-400 text-center sm:text-left">
   <li>
     <button
       onClick={() => handleScroll("home")}
@@ -88,13 +87,31 @@ const handleScroll = (id) => {
 
           {/* Social Media */}
           <div>
-             <h4 className="text-white font-medium text-base lg:text-sl xl:text-xl mb-4 lg:mb-6 tracking-wide">
+             <h4 className="text-white font-medium text-center sm:text-left text-base lg:text-sl xl:text-xl mb-4 lg:mb-6 tracking-wide">
                 Social Media
             </h4>
-             <ul className="space-y-3 text-base lg:text-sl text-gray-400">
-              <li className="hover:text-white transition">Instagram</li>
-              <li className="hover:text-white transition">LinkedIn</li>
-            </ul>
+              <ul className="space-y-3 text-lg sm:text-base lg:text-sl text-gray-400 flex flex-col items-center sm:items-start">
+  <li>
+    <a 
+      href="" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="hover:text-white transition"
+    >
+      Instagram
+    </a>
+  </li>
+  <li>
+    <a 
+      href="https://www.linkedin.com/company/enerviq/about/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="hover:text-white transition"
+    >
+      LinkedIn
+    </a>
+  </li>
+</ul>
           </div>
 
           {/* Newsletter */}

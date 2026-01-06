@@ -1,0 +1,8 @@
+.gradual-blur {
+  pointer-events: none;
+}
+
+.gradual-blur-inner {
+  width: 100%;
+  height: 100%;
+}

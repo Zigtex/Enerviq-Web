@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "googleapi": "^1.0.2",
     "gsap": "^3.14.2",
+    "mathjs": "^15.1.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-router-dom": "^7.11.0"

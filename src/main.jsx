@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 import "./styles/metallic.css";
+import "./styles/gradual-blur.css";
+
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
